@@ -1,0 +1,16 @@
+# Podemos mudar o profile aqui pela configs go application.yml
+spring:
+  application:
+    name:  # dá nome à app
+
+  profiles:
+    active:  # ativa o tipo de profile
+
+server:
+  port: # your port
+
+logging:
+  level:
+    root:  # define o nível global
+    com.joshua.expense_api: # mete mais detalhe só no meu código.
+

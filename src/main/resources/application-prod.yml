@@ -1,0 +1,19 @@
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+  datasource:
+    url:
+    username:
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: validate #Muito mais seguro que update
+    show-sql: false
+
+logging:
+  level:
+    root:
+    com.joshua.expenseapi:

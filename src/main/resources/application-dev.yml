@@ -1,0 +1,21 @@
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+  datasource:
+    url:
+    username:
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    org.springframework.web:
+    org.hibernate.SQL:
+
+# Isto só irá ser carregado quando o profile dev está ativo. O Spring boot usa spring.config.activate.on-profile para ativar blocos de config por perfil
